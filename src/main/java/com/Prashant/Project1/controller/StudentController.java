@@ -45,4 +45,10 @@ public class StudentController {
                                 @RequestBody StudentDto studentDto){
         return studentService.updateIndividualStatus(studentId,studentDto);
     }
+
+    @GetMapping(value="/hello")
+    public String hellomsg(){
+        return "Hello Every one";
+    }
+
 }
