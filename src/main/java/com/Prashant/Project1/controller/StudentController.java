@@ -4,6 +4,8 @@ import com.Prashant.Project1.service.StudentService;
 import com.Prashant.Project1.dto.StudentDto;
 import com.Prashant.Project1.modal.Student;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -46,9 +48,6 @@ public class StudentController {
         return studentService.updateIndividualStatus(studentId,studentDto);
     }
 
-    @GetMapping(value="/hello")
-    public String hellomsg(){
-        return "Hello Every one";
-    }
+
 
 }

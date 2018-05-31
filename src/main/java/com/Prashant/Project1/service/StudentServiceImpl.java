@@ -5,7 +5,10 @@ import com.Prashant.Project1.dto.StudentDto;
 import com.Prashant.Project1.modal.Status;
 import com.Prashant.Project1.modal.Student;
 import com.Prashant.Project1.repository.StudentRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 import java.util.Optional;
